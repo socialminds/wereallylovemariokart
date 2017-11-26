@@ -27761,8 +27761,18 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react2.default.createClass({
-	  displayName: "setup-round",
+	/*
+	SetupRound
+	  PeopleList
+	  PlayersList
+	  CharactersList
+	  NumberOfRacesSelection
+	  ResetButton
+	  NextButton
+	*/
+
+	var SetupRound = _react2.default.createClass({
+	  displayName: "SetupRound",
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "div",
@@ -27772,1613 +27782,14 @@
 	        null,
 	        "Setup Round"
 	      ),
-	      _react2.default.createElement(
-	        "section",
-	        { id: "people" },
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Martin", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Martin"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Alex", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Alex"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Dan", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Dan"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Lauren", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Lauren"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Dave", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Dave"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Mike", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Mike"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Doris", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Doris"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_Brandon", className: "person dropbox" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "person draggee" },
-	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "Brandon"
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "section",
-	        { id: "players" },
-	        _react2.default.createElement(
-	          "article",
-	          { id: "player1", className: "player" },
-	          _react2.default.createElement("div", { className: "person dropbox" }),
-	          _react2.default.createElement("div", { className: "avatar dropbox" }),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle light" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart S" },
-	                "Standard Kart S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Booster Seat" },
-	                "Booster Seat"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mini Beast" },
-	                "Mini Beast"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Cheep Charger" },
-	                "Cheep Charger"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Tiny Titan" },
-	                "Tiny Titan"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Blue Falcon" },
-	                "Blue Falcon"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike S" },
-	                "Standard Bike S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bullet Bike" },
-	                "Bullet Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bit Bike" },
-	                "Bit Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Quacker" },
-	                "Quacker"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Magikruiser" },
-	                "Magikruiser"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jet Bubble" },
-	                "Jet Bubble"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle medium" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart M" },
-	                "Standard Kart M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Classic Dragster" },
-	                "Classic Dragster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wild Wing" },
-	                "Wild Wing"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Super Blooper" },
-	                "Super Blooper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Daytripper" },
-	                "Daytripper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sprinter" },
-	                "Sprinter"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike M" },
-	                "Standard Bike M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mach Bike" },
-	                "Mach Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sugarscoot" },
-	                "Sugarscoot"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Zip Zip" },
-	                "Zip Zip"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sneakster" },
-	                "Sneakster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Dolphin Dasher" },
-	                "Dolphin Dasher"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle heavy" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart L" },
-	                "Standard Kart L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Offroader" },
-	                "Offroader"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Flyer" },
-	                "Flame Flyer"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Piranha Prowler" },
-	                "Piranha Prowler"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jetsetter" },
-	                "Jetsetter"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Honeycoupe" },
-	                "Honeycoupe"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike L" },
-	                "Standard Bike L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Runner" },
-	                "Flame Runner"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wario Bike" },
-	                "Wario Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Shooting Star" },
-	                "Shooting Star"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Spear" },
-	                "Spear"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Phantom" },
-	                "Phantom"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "transmission disabled" },
-	            _react2.default.createElement("input", { type: "radio", name: "transmission1", value: "auto", id: "transmission1_auto", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission1_auto" },
-	              "A"
-	            ),
-	            _react2.default.createElement("input", { type: "radio", name: "transmission1", value: "manual", id: "transmission1_manual", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission1_manual" },
-	              "M"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "article",
-	          { id: "player2", className: "player" },
-	          _react2.default.createElement("div", { className: "person dropbox" }),
-	          _react2.default.createElement("div", { className: "avatar dropbox" }),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle light" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart S" },
-	                "Standard Kart S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Booster Seat" },
-	                "Booster Seat"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mini Beast" },
-	                "Mini Beast"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Cheep Charger" },
-	                "Cheep Charger"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Tiny Titan" },
-	                "Tiny Titan"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Blue Falcon" },
-	                "Blue Falcon"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike S" },
-	                "Standard Bike S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bullet Bike" },
-	                "Bullet Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bit Bike" },
-	                "Bit Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Quacker" },
-	                "Quacker"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Magikruiser" },
-	                "Magikruiser"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jet Bubble" },
-	                "Jet Bubble"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle medium" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart M" },
-	                "Standard Kart M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Classic Dragster" },
-	                "Classic Dragster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wild Wing" },
-	                "Wild Wing"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Super Blooper" },
-	                "Super Blooper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Daytripper" },
-	                "Daytripper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sprinter" },
-	                "Sprinter"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike M" },
-	                "Standard Bike M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mach Bike" },
-	                "Mach Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sugarscoot" },
-	                "Sugarscoot"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Zip Zip" },
-	                "Zip Zip"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sneakster" },
-	                "Sneakster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Dolphin Dasher" },
-	                "Dolphin Dasher"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle heavy" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart L" },
-	                "Standard Kart L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Offroader" },
-	                "Offroader"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Flyer" },
-	                "Flame Flyer"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Piranha Prowler" },
-	                "Piranha Prowler"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jetsetter" },
-	                "Jetsetter"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Honeycoupe" },
-	                "Honeycoupe"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike L" },
-	                "Standard Bike L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Runner" },
-	                "Flame Runner"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wario Bike" },
-	                "Wario Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Shooting Star" },
-	                "Shooting Star"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Spear" },
-	                "Spear"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Phantom" },
-	                "Phantom"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "transmission disabled" },
-	            _react2.default.createElement("input", { type: "radio", name: "transmission2", value: "auto", id: "transmission2_auto", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission2_auto" },
-	              "A"
-	            ),
-	            _react2.default.createElement("input", { type: "radio", name: "transmission2", value: "manual", id: "transmission2_manual", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission2_manual" },
-	              "M"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "article",
-	          { id: "player3", className: "player" },
-	          _react2.default.createElement("div", { className: "person dropbox" }),
-	          _react2.default.createElement("div", { className: "avatar dropbox" }),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle light" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart S" },
-	                "Standard Kart S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Booster Seat" },
-	                "Booster Seat"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mini Beast" },
-	                "Mini Beast"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Cheep Charger" },
-	                "Cheep Charger"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Tiny Titan" },
-	                "Tiny Titan"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Blue Falcon" },
-	                "Blue Falcon"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike S" },
-	                "Standard Bike S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bullet Bike" },
-	                "Bullet Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bit Bike" },
-	                "Bit Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Quacker" },
-	                "Quacker"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Magikruiser" },
-	                "Magikruiser"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jet Bubble" },
-	                "Jet Bubble"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle medium" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart M" },
-	                "Standard Kart M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Classic Dragster" },
-	                "Classic Dragster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wild Wing" },
-	                "Wild Wing"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Super Blooper" },
-	                "Super Blooper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Daytripper" },
-	                "Daytripper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sprinter" },
-	                "Sprinter"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike M" },
-	                "Standard Bike M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mach Bike" },
-	                "Mach Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sugarscoot" },
-	                "Sugarscoot"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Zip Zip" },
-	                "Zip Zip"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sneakster" },
-	                "Sneakster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Dolphin Dasher" },
-	                "Dolphin Dasher"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle heavy" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart L" },
-	                "Standard Kart L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Offroader" },
-	                "Offroader"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Flyer" },
-	                "Flame Flyer"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Piranha Prowler" },
-	                "Piranha Prowler"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jetsetter" },
-	                "Jetsetter"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Honeycoupe" },
-	                "Honeycoupe"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike L" },
-	                "Standard Bike L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Runner" },
-	                "Flame Runner"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wario Bike" },
-	                "Wario Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Shooting Star" },
-	                "Shooting Star"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Spear" },
-	                "Spear"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Phantom" },
-	                "Phantom"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "transmission disabled" },
-	            _react2.default.createElement("input", { type: "radio", name: "transmission3", value: "auto", id: "transmission3_auto", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission3_auto" },
-	              "A"
-	            ),
-	            _react2.default.createElement("input", { type: "radio", name: "transmission3", value: "manual", id: "transmission3_manual", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission3_manual" },
-	              "M"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "article",
-	          { id: "player4", className: "player" },
-	          _react2.default.createElement("div", { className: "person dropbox" }),
-	          _react2.default.createElement("div", { className: "avatar dropbox" }),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle light" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart S" },
-	                "Standard Kart S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Booster Seat" },
-	                "Booster Seat"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mini Beast" },
-	                "Mini Beast"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Cheep Charger" },
-	                "Cheep Charger"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Tiny Titan" },
-	                "Tiny Titan"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Blue Falcon" },
-	                "Blue Falcon"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Light Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike S" },
-	                "Standard Bike S"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bullet Bike" },
-	                "Bullet Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Bit Bike" },
-	                "Bit Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Quacker" },
-	                "Quacker"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Magikruiser" },
-	                "Magikruiser"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jet Bubble" },
-	                "Jet Bubble"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle medium" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart M" },
-	                "Standard Kart M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Classic Dragster" },
-	                "Classic Dragster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wild Wing" },
-	                "Wild Wing"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Super Blooper" },
-	                "Super Blooper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Daytripper" },
-	                "Daytripper"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sprinter" },
-	                "Sprinter"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Medium Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike M" },
-	                "Standard Bike M"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Mach Bike" },
-	                "Mach Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sugarscoot" },
-	                "Sugarscoot"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Zip Zip" },
-	                "Zip Zip"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Sneakster" },
-	                "Sneakster"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Dolphin Dasher" },
-	                "Dolphin Dasher"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "select",
-	            { className: "vehicle heavy" },
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Karts" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Kart L" },
-	                "Standard Kart L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Offroader" },
-	                "Offroader"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Flyer" },
-	                "Flame Flyer"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Piranha Prowler" },
-	                "Piranha Prowler"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Jetsetter" },
-	                "Jetsetter"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Honeycoupe" },
-	                "Honeycoupe"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "optgroup",
-	              { label: "Heavy Bikes" },
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Standard Bike L" },
-	                "Standard Bike L"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Flame Runner" },
-	                "Flame Runner"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Wario Bike" },
-	                "Wario Bike"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Shooting Star" },
-	                "Shooting Star"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Spear" },
-	                "Spear"
-	              ),
-	              _react2.default.createElement(
-	                "option",
-	                { value: "Phantom" },
-	                "Phantom"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "transmission disabled" },
-	            _react2.default.createElement("input", { type: "radio", name: "transmission4", value: "auto", id: "transmission4_auto", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission4_auto" },
-	              "A"
-	            ),
-	            _react2.default.createElement("input", { type: "radio", name: "transmission4", value: "manual", id: "transmission4_manual", disabled: "disabled" }),
-	            _react2.default.createElement(
-	              "label",
-	              { htmlFor: "transmission4_manual" },
-	              "M"
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "section",
-	        { id: "character_pool" },
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_baby_mario", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee baby_mario" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Mario" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Baby Mario"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_baby_luigi", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee baby_luigi" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Luigi" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Baby Luigi"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_baby_peach", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee baby_peach" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Peach" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Baby Peach"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_baby_daisy", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee baby_daisy" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Daisy" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Baby Daisy"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_toad", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee toad" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Toad" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Toad"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_toadette", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee toadette" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Toadette" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Toadette"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_koopa_troopa", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee koopa_troopa" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Koopa Troopa" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Koopa Troopa"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_dry_bones", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee dry_bones" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Dry Bones" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Dry Bones"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_mario", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee mario" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Mario" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Mario"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_luigi", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee luigi" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Luigi" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Luigi"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_peach", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee peach" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Peach" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Peach"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_daisy", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee daisy" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Daisy" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Daisy"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_yoshi", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee yoshi" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Yoshi" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Yoshi"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_birdo", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee birdo" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Birdo" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Birdo"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_diddy_kong", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee diddy_kong" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Diddy Kong" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Diddy Kong"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_bowser_jr", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee bowser_jr" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Bowser Jr." })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Bowser Jr."
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_wario", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee wario" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Wario" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Wario"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_waluigi", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee waluigi" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Waluigi" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Waluigi"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_donkey_kong", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee donkey_kong" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Donkey Kong" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Donkey Kong"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_bowser", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee bowser" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Bowser" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Bowser"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_king_boo", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee king_boo" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "King Boo" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "King Boo"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_rosalina", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee rosalina" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Rosalina" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Rosalina"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_funky_kong", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee funky_kong" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Funky Kong" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Funky Kong"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "holder_dry_bowser", className: "dropbox avatar" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "avatar character draggee dry_bowser" },
-	            _react2.default.createElement(
-	              "div",
-	              null,
-	              _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Dry Bowser" })
-	            ),
-	            _react2.default.createElement(
-	              "label",
-	              null,
-	              "Dry Bowser"
-	            )
-	          )
-	        )
-	      ),
+	      _react2.default.createElement(PeopleList, null),
+	      _react2.default.createElement(PlayersList, null),
+	      _react2.default.createElement(CharactersList, null),
 	      _react2.default.createElement(
 	        "form",
 	        { id: "setup", action: "/select-places", method: "get" },
-	        _react2.default.createElement(
-	          "fieldset",
-	          null,
-	          _react2.default.createElement(
-	            "legend",
-	            null,
-	            "Number of Races"
-	          ),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "2", id: "race_count_2", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_2" },
-	                "2"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "3", id: "race_count_3", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_3" },
-	                "3"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "4", id: "race_count_4", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_4" },
-	                "4"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "5", id: "race_count_5", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_5" },
-	                "5"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "8", id: "race_count_8", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_8" },
-	                "8"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "10", id: "race_count_10", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_10" },
-	                "10"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "12", id: "race_count_12", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_12" },
-	                "12"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "16", id: "race_count_16", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_16" },
-	                "16"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("input", { type: "radio", value: "32", id: "race_count_32", name: "race_count" }),
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "race_count_32" },
-	                "32"
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement("input", { type: "submit", name: "submit", value: "Next", id: "next" }),
+	        _react2.default.createElement(NumberOfRacesSelection, null),
+	        _react2.default.createElement(NextButton, null),
 	        _react2.default.createElement(
 	          "table",
 	          { id: "data" },
@@ -32776,14 +31187,1658 @@
 	          )
 	        )
 	      ),
-	      _react2.default.createElement(
-	        "button",
-	        { id: "reset" },
-	        "Reset"
-	      )
+	      _react2.default.createElement(ResetButton, null)
 	    );
 	  }
 	}); // Libs
+
+
+	var PeopleList = _react2.default.createClass({
+	  displayName: "PeopleList",
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "section",
+	      { id: "people" },
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Martin", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Martin"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Alex", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Alex"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Dan", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Dan"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Lauren", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Lauren"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Dave", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Dave"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Mike", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Mike"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Doris", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Doris"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_Brandon", className: "person dropbox" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "person draggee" },
+	          _react2.default.createElement(
+	            "strong",
+	            null,
+	            "Brandon"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	var PlayersList = _react2.default.createClass({
+	  displayName: "PlayersList",
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "section",
+	      { id: "players" },
+	      _react2.default.createElement(
+	        "article",
+	        { id: "player1", className: "player" },
+	        _react2.default.createElement("div", { className: "person dropbox" }),
+	        _react2.default.createElement("div", { className: "avatar dropbox" }),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle light" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart S" },
+	              "Standard Kart S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Booster Seat" },
+	              "Booster Seat"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mini Beast" },
+	              "Mini Beast"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Cheep Charger" },
+	              "Cheep Charger"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Tiny Titan" },
+	              "Tiny Titan"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Blue Falcon" },
+	              "Blue Falcon"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike S" },
+	              "Standard Bike S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bullet Bike" },
+	              "Bullet Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bit Bike" },
+	              "Bit Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Quacker" },
+	              "Quacker"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Magikruiser" },
+	              "Magikruiser"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jet Bubble" },
+	              "Jet Bubble"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle medium" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart M" },
+	              "Standard Kart M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Classic Dragster" },
+	              "Classic Dragster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wild Wing" },
+	              "Wild Wing"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Super Blooper" },
+	              "Super Blooper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Daytripper" },
+	              "Daytripper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sprinter" },
+	              "Sprinter"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike M" },
+	              "Standard Bike M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mach Bike" },
+	              "Mach Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sugarscoot" },
+	              "Sugarscoot"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Zip Zip" },
+	              "Zip Zip"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sneakster" },
+	              "Sneakster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Dolphin Dasher" },
+	              "Dolphin Dasher"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle heavy" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart L" },
+	              "Standard Kart L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Offroader" },
+	              "Offroader"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Flyer" },
+	              "Flame Flyer"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Piranha Prowler" },
+	              "Piranha Prowler"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jetsetter" },
+	              "Jetsetter"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Honeycoupe" },
+	              "Honeycoupe"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike L" },
+	              "Standard Bike L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Runner" },
+	              "Flame Runner"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wario Bike" },
+	              "Wario Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Shooting Star" },
+	              "Shooting Star"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Spear" },
+	              "Spear"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Phantom" },
+	              "Phantom"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "transmission disabled" },
+	          _react2.default.createElement("input", { type: "radio", name: "transmission1", value: "auto", id: "transmission1_auto", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission1_auto" },
+	            "A"
+	          ),
+	          _react2.default.createElement("input", { type: "radio", name: "transmission1", value: "manual", id: "transmission1_manual", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission1_manual" },
+	            "M"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "article",
+	        { id: "player2", className: "player" },
+	        _react2.default.createElement("div", { className: "person dropbox" }),
+	        _react2.default.createElement("div", { className: "avatar dropbox" }),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle light" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart S" },
+	              "Standard Kart S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Booster Seat" },
+	              "Booster Seat"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mini Beast" },
+	              "Mini Beast"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Cheep Charger" },
+	              "Cheep Charger"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Tiny Titan" },
+	              "Tiny Titan"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Blue Falcon" },
+	              "Blue Falcon"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike S" },
+	              "Standard Bike S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bullet Bike" },
+	              "Bullet Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bit Bike" },
+	              "Bit Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Quacker" },
+	              "Quacker"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Magikruiser" },
+	              "Magikruiser"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jet Bubble" },
+	              "Jet Bubble"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle medium" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart M" },
+	              "Standard Kart M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Classic Dragster" },
+	              "Classic Dragster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wild Wing" },
+	              "Wild Wing"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Super Blooper" },
+	              "Super Blooper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Daytripper" },
+	              "Daytripper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sprinter" },
+	              "Sprinter"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike M" },
+	              "Standard Bike M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mach Bike" },
+	              "Mach Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sugarscoot" },
+	              "Sugarscoot"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Zip Zip" },
+	              "Zip Zip"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sneakster" },
+	              "Sneakster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Dolphin Dasher" },
+	              "Dolphin Dasher"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle heavy" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart L" },
+	              "Standard Kart L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Offroader" },
+	              "Offroader"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Flyer" },
+	              "Flame Flyer"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Piranha Prowler" },
+	              "Piranha Prowler"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jetsetter" },
+	              "Jetsetter"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Honeycoupe" },
+	              "Honeycoupe"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike L" },
+	              "Standard Bike L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Runner" },
+	              "Flame Runner"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wario Bike" },
+	              "Wario Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Shooting Star" },
+	              "Shooting Star"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Spear" },
+	              "Spear"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Phantom" },
+	              "Phantom"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "transmission disabled" },
+	          _react2.default.createElement("input", { type: "radio", name: "transmission2", value: "auto", id: "transmission2_auto", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission2_auto" },
+	            "A"
+	          ),
+	          _react2.default.createElement("input", { type: "radio", name: "transmission2", value: "manual", id: "transmission2_manual", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission2_manual" },
+	            "M"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "article",
+	        { id: "player3", className: "player" },
+	        _react2.default.createElement("div", { className: "person dropbox" }),
+	        _react2.default.createElement("div", { className: "avatar dropbox" }),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle light" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart S" },
+	              "Standard Kart S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Booster Seat" },
+	              "Booster Seat"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mini Beast" },
+	              "Mini Beast"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Cheep Charger" },
+	              "Cheep Charger"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Tiny Titan" },
+	              "Tiny Titan"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Blue Falcon" },
+	              "Blue Falcon"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike S" },
+	              "Standard Bike S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bullet Bike" },
+	              "Bullet Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bit Bike" },
+	              "Bit Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Quacker" },
+	              "Quacker"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Magikruiser" },
+	              "Magikruiser"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jet Bubble" },
+	              "Jet Bubble"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle medium" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart M" },
+	              "Standard Kart M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Classic Dragster" },
+	              "Classic Dragster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wild Wing" },
+	              "Wild Wing"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Super Blooper" },
+	              "Super Blooper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Daytripper" },
+	              "Daytripper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sprinter" },
+	              "Sprinter"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike M" },
+	              "Standard Bike M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mach Bike" },
+	              "Mach Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sugarscoot" },
+	              "Sugarscoot"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Zip Zip" },
+	              "Zip Zip"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sneakster" },
+	              "Sneakster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Dolphin Dasher" },
+	              "Dolphin Dasher"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle heavy" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart L" },
+	              "Standard Kart L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Offroader" },
+	              "Offroader"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Flyer" },
+	              "Flame Flyer"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Piranha Prowler" },
+	              "Piranha Prowler"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jetsetter" },
+	              "Jetsetter"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Honeycoupe" },
+	              "Honeycoupe"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike L" },
+	              "Standard Bike L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Runner" },
+	              "Flame Runner"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wario Bike" },
+	              "Wario Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Shooting Star" },
+	              "Shooting Star"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Spear" },
+	              "Spear"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Phantom" },
+	              "Phantom"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "transmission disabled" },
+	          _react2.default.createElement("input", { type: "radio", name: "transmission3", value: "auto", id: "transmission3_auto", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission3_auto" },
+	            "A"
+	          ),
+	          _react2.default.createElement("input", { type: "radio", name: "transmission3", value: "manual", id: "transmission3_manual", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission3_manual" },
+	            "M"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "article",
+	        { id: "player4", className: "player" },
+	        _react2.default.createElement("div", { className: "person dropbox" }),
+	        _react2.default.createElement("div", { className: "avatar dropbox" }),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle light" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart S" },
+	              "Standard Kart S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Booster Seat" },
+	              "Booster Seat"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mini Beast" },
+	              "Mini Beast"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Cheep Charger" },
+	              "Cheep Charger"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Tiny Titan" },
+	              "Tiny Titan"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Blue Falcon" },
+	              "Blue Falcon"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Light Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike S" },
+	              "Standard Bike S"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bullet Bike" },
+	              "Bullet Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Bit Bike" },
+	              "Bit Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Quacker" },
+	              "Quacker"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Magikruiser" },
+	              "Magikruiser"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jet Bubble" },
+	              "Jet Bubble"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle medium" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart M" },
+	              "Standard Kart M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Classic Dragster" },
+	              "Classic Dragster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wild Wing" },
+	              "Wild Wing"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Super Blooper" },
+	              "Super Blooper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Daytripper" },
+	              "Daytripper"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sprinter" },
+	              "Sprinter"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Medium Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike M" },
+	              "Standard Bike M"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Mach Bike" },
+	              "Mach Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sugarscoot" },
+	              "Sugarscoot"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Zip Zip" },
+	              "Zip Zip"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Sneakster" },
+	              "Sneakster"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Dolphin Dasher" },
+	              "Dolphin Dasher"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "select",
+	          { className: "vehicle heavy" },
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Karts" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Kart L" },
+	              "Standard Kart L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Offroader" },
+	              "Offroader"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Flyer" },
+	              "Flame Flyer"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Piranha Prowler" },
+	              "Piranha Prowler"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Jetsetter" },
+	              "Jetsetter"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Honeycoupe" },
+	              "Honeycoupe"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "optgroup",
+	            { label: "Heavy Bikes" },
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Standard Bike L" },
+	              "Standard Bike L"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Flame Runner" },
+	              "Flame Runner"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Wario Bike" },
+	              "Wario Bike"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Shooting Star" },
+	              "Shooting Star"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Spear" },
+	              "Spear"
+	            ),
+	            _react2.default.createElement(
+	              "option",
+	              { value: "Phantom" },
+	              "Phantom"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "transmission disabled" },
+	          _react2.default.createElement("input", { type: "radio", name: "transmission4", value: "auto", id: "transmission4_auto", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission4_auto" },
+	            "A"
+	          ),
+	          _react2.default.createElement("input", { type: "radio", name: "transmission4", value: "manual", id: "transmission4_manual", disabled: "disabled" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "transmission4_manual" },
+	            "M"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	var CharactersList = _react2.default.createClass({
+	  displayName: "CharactersList",
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "section",
+	      { id: "character_pool" },
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_baby_mario", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee baby_mario" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Mario" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Baby Mario"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_baby_luigi", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee baby_luigi" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Luigi" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Baby Luigi"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_baby_peach", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee baby_peach" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Peach" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Baby Peach"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_baby_daisy", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee baby_daisy" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Baby Daisy" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Baby Daisy"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_toad", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee toad" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Toad" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Toad"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_toadette", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee toadette" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Toadette" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Toadette"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_koopa_troopa", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee koopa_troopa" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Koopa Troopa" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Koopa Troopa"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_dry_bones", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee dry_bones" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Dry Bones" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Dry Bones"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_mario", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee mario" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Mario" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Mario"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_luigi", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee luigi" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Luigi" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Luigi"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_peach", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee peach" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Peach" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Peach"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_daisy", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee daisy" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Daisy" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Daisy"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_yoshi", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee yoshi" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Yoshi" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Yoshi"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_birdo", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee birdo" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Birdo" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Birdo"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_diddy_kong", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee diddy_kong" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Diddy Kong" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Diddy Kong"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_bowser_jr", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee bowser_jr" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Bowser Jr." })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Bowser Jr."
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_wario", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee wario" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Wario" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Wario"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_waluigi", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee waluigi" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Waluigi" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Waluigi"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_donkey_kong", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee donkey_kong" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Donkey Kong" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Donkey Kong"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_bowser", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee bowser" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Bowser" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Bowser"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_king_boo", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee king_boo" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "King Boo" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "King Boo"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_rosalina", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee rosalina" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Rosalina" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Rosalina"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_funky_kong", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee funky_kong" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Funky Kong" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Funky Kong"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { id: "holder_dry_bowser", className: "dropbox avatar" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "avatar character draggee dry_bowser" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", { src: "_base/img/character_avatars.png", alt: "Dry Bowser" })
+	          ),
+	          _react2.default.createElement(
+	            "label",
+	            null,
+	            "Dry Bowser"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	var NumberOfRacesSelection = _react2.default.createClass({
+	  displayName: "NumberOfRacesSelection",
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "fieldset",
+	      null,
+	      _react2.default.createElement(
+	        "legend",
+	        null,
+	        "Number of Races"
+	      ),
+	      _react2.default.createElement(
+	        "ul",
+	        null,
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "2", id: "race_count_2", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_2" },
+	            "2"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "3", id: "race_count_3", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_3" },
+	            "3"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "4", id: "race_count_4", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_4" },
+	            "4"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "5", id: "race_count_5", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_5" },
+	            "5"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "8", id: "race_count_8", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_8" },
+	            "8"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "10", id: "race_count_10", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_10" },
+	            "10"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "12", id: "race_count_12", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_12" },
+	            "12"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "16", id: "race_count_16", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_16" },
+	            "16"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement("input", { type: "radio", value: "32", id: "race_count_32", name: "race_count" }),
+	          _react2.default.createElement(
+	            "label",
+	            { htmlFor: "race_count_32" },
+	            "32"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	var ResetButton = _react2.default.createClass({
+	  displayName: "ResetButton",
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "button",
+	      { id: "reset" },
+	      "Reset"
+	    );
+	  }
+	});
+
+	var NextButton = _react2.default.createClass({
+	  displayName: "NextButton",
+	  render: function render() {
+	    return _react2.default.createElement("input", { type: "submit", name: "submit", value: "Next", id: "next" });
+	  }
+	});
+
+	exports.default = SetupRound;
 
 /***/ }),
 /* 248 */
